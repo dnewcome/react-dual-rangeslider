@@ -18,9 +18,6 @@ $ grunt
 $ git add dist
 ```
 
-react-dual-rangeslider is currently deployed directly from github, so dist files must be checked in. This requirement
-will be dropped once the module is on npm.
-
 ## Usage
 
 ```
