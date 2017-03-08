@@ -1,5 +1,5 @@
 # react-dual-rangeslider 
-[![Build Status](https://travis-ci.org/dnewcome/react-dual-rangeslider.svg?branch=master)
+![Build Status](https://travis-ci.org/dnewcome/react-dual-rangeslider.svg?branch=master)
 
 ## Semantic HTML5 range slider React component with upper and lower bound inputs.
 
