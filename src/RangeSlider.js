@@ -43,7 +43,7 @@ class RangeSlider extends React.Component {
                 </div>
                 <div
                     style={this.props.style}
-                    className={this.props.ClassName + ' range-slider Pos(r) Ta(c) H(35px)'}>
+                    className={this.props.className + ' range-slider Pos(r) Ta(c) H(35px)'}>
                     <div style={{
                             position: 'absolute',
                             boxSizing: 'border-box',
@@ -121,5 +121,7 @@ class RangeSlider extends React.Component {
         return ret;
     }
 }
+
+RangeSlider.defaultProps = {className: ''}
 
 export default RangeSlider;
