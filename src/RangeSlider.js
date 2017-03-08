@@ -26,6 +26,8 @@ class RangeSlider extends React.Component {
         this.setState({min: min, max: max});
     }
     componentWillReceiveProps(props) {
+        // keep state in sync if we get new props
+        // TODO: consolidate with CDM
         var min = this.props.minValue || this.props.min;
         var max = this.props.maxValue || this.props.max;
         this.state.minElement.value = min;
@@ -122,6 +124,8 @@ class RangeSlider extends React.Component {
     }
 }
 
-RangeSlider.defaultProps = {className: ''}
+RangeSlider.defaultProps = {
+    className: ''
+}
 
 export default RangeSlider;
