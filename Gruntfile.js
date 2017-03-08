@@ -87,12 +87,22 @@ module.exports = function(grunt) {
         copy: { dev: { files: [
             { expand: true, cwd: 'src/', src: 'rangeslider.css', dest: 'dist/' },
             { expand: true, cwd: 'assets/', src: 'thumb.svg', dest: 'dist/' }
-        ]}}
+        ]}},
+		watch: {
+			scripts: {
+				files: ['**/*.js'],
+				tasks: ['default'],
+				options: {
+					spawn: false,
+				}
+			}
+		}
     });
     grunt.loadNpmTasks('grunt-babel');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-atomizer');
     grunt.loadNpmTasks('grunt-webpack');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['atomizer', 'copy', 'babel', 'webpack']);
 };
