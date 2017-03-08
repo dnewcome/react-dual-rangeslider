@@ -21,7 +21,10 @@
 }
 
 .range-slider input[type=range]::-webkit-slider-thumb, .range-slider input[type=range]::-moz-range-thumb {
+}
 
+.range-slider input[type=range]::-webkit-slider-thumb, .range-slider input[type=range]::-moz-range-thumb {
+	-moz-transform:translateX(-10px); 
 }
 
 /* styles for Chrome and Safari */
@@ -47,6 +50,10 @@
     outline: 0;
     height: 15px;
     width: 15px;
+}
+
+input[type=range] {
+	background-color: transparent;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
